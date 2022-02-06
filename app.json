@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/xiaobei/xiaobei",
+    
+    "pages/dati/dati",
+    "pages/dongtai/dongtai",
+    "pages/index/index",
+    "pages/me/me",
+   
+    "pages/login/login",
+    "pages/admin/admin",
+    "pages/xx/xx",
+    "pages/xuexi/xuexi"
+    
+
+  ],
+  "window": {
+    
+    "navigationBarTextStyle": "black",
+    "navigationStyle":"custom"
+  },
+  "usingComponents":{
+    "head": "components/head/index"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"image/binggan.png",
+        "selectedIconPath": "image/binggan-active.png"
+      },
+      
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "image/huasheng.png",
+        "selectedIconPath": "image/huasheng-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,50 @@
+<!--pages/xiaobei/xiaobei.wxml-->
+<!-- 引入刚才在app.json中声明的head组件 -->
+<head></head>
+
+<!-- 页面布局 -->
+<!-- 时间 -->
+<view class="btn3" style="position: relative;">
+<view class="text-title"></view>
+<view class="show-time" bindtap="onLoad" style="position: relative; left: 0rpx; top: 21rpx">{{time}}</view>
+</view>
+
+<view class="btn" style="position: relative; left: 76rpx; top: 0rpx; width: 658rpx; height: 72rpx; display: flex; box-sizing: border-box">
+<view class="btn4" style="position: relative; left: 0rpx; top: 0rpx; width: 228rpx; height: 46rpx; display: flex; box-sizing: border-box">学生信息
+</view>
+</view>
+ 
+<image class="btn" style="position: relative;" src="cloud://dangjian-2gl0l4af8dd6dcb4.6461-dangjian-2gl0l4af8dd6dcb4-1304877619/图标.jpg" style="width: 54rpx; height: 248rpx; display: inline-block; box-sizing: border-box; position: relative; left: 166rpx; top: -200rpx"></image>
+
+<view style="position: relative; left: 0rpx; top: -184rpx; width: 692rpx; height: 225rpx; display: block; box-sizing: border-box">
+<view class="itemView" style="position: relative; left: 232rpx; top: -240rpx; width: 486rpx; height: 44rpx; display: block; box-sizing: border-box">
+  <label style="margin-right: -80px; margin-left: 40px; position: absolute; left: -70rpx; top: -4rpx" class="btn1">姓名</label>
+    <input style="position: relative; padding-left: 40px; width: 350rpx; height: 36rpx; display: block; box-sizing: border-box; left: 10rpx; top: -14rpx" type="text"  class="input" name="userName" placeholder="请输入" 
+    bindinput="userNameInput"/> 
+  </view>
+  <view class="itemView" style="position: relative; left: 232rpx; top: -240rpx; width: 486rpx; height: 44rpx; display: block; box-sizing: border-box">
+  <label style="margin-right: -80px; margin-left: 40px; position: absolute; left: -70rpx; top: -4rpx" class="btn1">学号</label>
+    <input style="position: relative; padding-left: 40px; width: 350rpx; height: 36rpx; display: block; box-sizing: border-box; left: 10rpx; top: -14rpx" type="text"  class="input" name="userName" placeholder="请输入" 
+    bindinput="userNameInput"/> 
+  </view>
+  <view class="itemView" style="position: relative; left: 232rpx; top: -240rpx; width: 486rpx; height: 44rpx; display: block; box-sizing: border-box">
+  <label style="margin-right: -80px; margin-left: 40px; position: absolute; left: -70rpx; top: -4rpx" class="btn1">班级</label>
+    <input style="position: relative; padding-left: 40px; width: 350rpx; height: 36rpx; display: block; box-sizing: border-box; left: 10rpx; top: -14rpx" type="text"  class="input" name="userName" placeholder="请输入" 
+    bindinput="userNameInput"/> 
+  </view>
+  <view class="itemView" style="position: relative; left: 232rpx; top: -240rpx; width: 486rpx; height: 44rpx; display: block; box-sizing: border-box">
+  <label style="margin-right: -80px; margin-left: 40px; position: absolute; left: -70rpx; top: -4rpx" class="btn1">学院</label>
+    <input style="position: relative; padding-left: 40px; width: 350rpx; height: 36rpx; display: block; box-sizing: border-box; left: 10rpx; top: -14rpx" type="text"  class="input" name="userName" placeholder="请输入" 
+    bindinput="userNameInput"/> 
+  </view>
+  <view class="itemView" style="position: relative; left: 232rpx; top: -240rpx; width: 486rpx; height: 44rpx; display: block; box-sizing: border-box">
+  <label style="margin-right: -80px; margin-left: 40px; position: absolute; left: -70rpx; top: -4rpx" class="btn1">学校</label>
+    <input style="position: relative; padding-left: 40px; width: 350rpx; height: 36rpx; display: block; box-sizing: border-box; left: 10rpx; top: -14rpx" type="text"  class="input" name="userName" placeholder="请输入" 
+    bindinput="userNameInput"/> 
+  </view>
+</view>
+
+
+
+<view style="position: relative; background: {{viewBg}}; color: white; height: 166rpx; width: 658rpx; display: block; box-sizing: border-box; left: 47rpx; top: -350rpx"></view>
+<view class="btn2" type="default" bindtap="changeBg" style="position: relative; left: 76rpx; top: -84rpx; width: 600rpx; height: 72rpx; display: flex; box-sizing: border-box">返校签到</view>

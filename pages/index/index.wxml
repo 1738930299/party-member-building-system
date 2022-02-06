@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="container-home">
+        <!-- 轮播图 -->
+        <view class="swiper-contain">
+        	<swiper 
+            
+        		class="swiper" 
+        		indicator-dots="true" 
+        		autoplay="true" 
+        		interval="3000" 
+        		duration="1000"
+    		>    
+    	        <block wx:for="{{adv}}" wx:key="unique">    
+    		        <swiper-item>    
+    		            <image 
+                            src="{{item}}" 
+                            mode="aspectFill"
+                        /> 
+    		        </swiper-item>    
+    	        </block> 
+    	    </swiper>
+        </view>
+
+        
+        <!---------公告--------->
+        <view class="notice-contain">
+            <view class="title">公告</view>
+            <view class="list">
+                <view class="item" wx:for="{{noticeList}}" wx:key="{{index}}" data-item='{{item}}'>
+                    {{item.content}}
+                </view>
+                <view class="border1 list-border"></view>
+                <view class="border2 list-border"></view>
+                <view class="border3 list-border"></view>
+                <view class="border4 list-border"></view>
+            </view>
+        </view>
+          </view>
+        </view>
+        <!--<web-view src="https://mp.weixin.qq.com/s?__biz=MzI2NDI4MTY5NQ==&mid=2247483985&idx=1&sn=93e7634d340e2ee565ea5ce8186e86af&chksm=eaae4961ddd9c07715bd85d26fcb924ac6304368756a3e3409f83a9e095c62ce5e11a2c73415&token=1431658338&lang=zh_CN#rd"></web-view>
+        <web-view src="https://mp.weixin.qq.com/s?__biz=MzI2NDI4MTY5NQ==&mid=2247483943&idx=1&sn=b805c4deb03c938383170ce82b34818c&chksm=eaae4917ddd9c0012294c24e3f0cee800d6775ab4d9dfd5c937eba1790192462a47609107138&token=1431658338&lang=zh_CN#rd"></web-view>-->

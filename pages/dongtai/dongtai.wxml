@@ -1,0 +1,34 @@
+<!--pages/dongtai/dongtai.wxml-->
+<view>
+ <text class="section-maintitle"></text>
+ <text class="section-subtitle"></text>
+ <text class="title">校、院两级学生会骨干集中学习全国学联二十七大会议精神</text>
+  <view class="tool">
+    <view class="circle-img">
+      <image src="/images/shang.png"></image>
+      <image class="share-img" src="/images/xinx.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <view class="detail">　本网讯 2020年10月10日，为深入学习全国学联二十七大会议精神，院学生会工作人员、二级学院学生分会主席团成员参加了集体学习，学习会由团委副书记姜层主持。
+<view class="{{isHide?'show':'hide'}}" bindtap="showMoreMsg">展开{{'会上，姜层老师带领与会人员重温了习近平总书记致全国学联第二十七次代表大会的贺信内容。他谈到，作为当代大学生，学生会骨干成员，要认真学习领会习近平总书记对青年和青年学生的殷殷嘱托和殷切希望，要切实加强政治自觉，提高政治敏锐度，要坚定理想信念、发奋成长成才、勇于开拓创新、锤炼高尚品德，不断增强服务广大同学成长成才的本领，满怀“扬帆破浪，策马扬鞭”的勇气和“时不我待、只争朝夕”的激情，让自己青春和生命在奋斗中更加绚丽多彩！'}}</view>
+ </view>
+</view> 
+
+<view>
+ <text class="section-maintitle"></text>
+ <text class="section-subtitle"></text>
+ <text class="title">学习贯彻党的十九届五中全会精神省委宣讲团报告会</text>
+  <view class="tool">
+    <view class="circle-img">
+      <image src="/images/shang.png"></image>
+      <image class="share-img" src="/images/xinx.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <view>
+<view class="detail">学院举办学习贯彻党的十九届五中全会精神省委宣讲团报告会。中共湖北省委宣讲团成员、华中科技大学经济学院院长张建华教授作报告。武汉船舶职业技术学院党委书记黄士华主持报告会，全体院领导、中层干部、党总支书记、马院教师，以及教职工、学生党员代表参加学习
+  <view class="{{isHide?'show':'hide'}}" bindtap="showMoreMsg">展开{{'教授以《推进“双循环”、谋划“十四五”——开启全面建设社会主义现代化国家新征程》为题，从深刻认识新发展阶段的重大意义、有利条件和重要特征，准确把握2035远景目标和“十四五”时期的总体要求和重点任务，牢牢把握构建新发展格局的战略构想和着力重点，紧密结合实际、落实推进全面建设社会主义现代化国家新征程等四个方面，对十九届五中全会精神作了系统阐述和深刻讲解。'}}</view>
+</view> 
+  </view>
+</view>

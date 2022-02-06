@@ -1,0 +1,44 @@
+<!--pages/dati/dati.wxml-->
+<view  wx:for="{{subject}}" wx:if="{{active_index==index}}" wx:key="index">
+  <view class="section">
+    <view class="top_title">
+      <view class="top_title_left">
+        <view wx:if="{{item.type==3}}">填空</view>
+      </view>
+      <view class="top_title_right"><text>{{active_index+1}}</text>/{{subject.length}}</view>
+    </view>
+    <!-- 题目 -->
+    <view class="fill_box" wx:if="{{item.type==3}}"> 
+      <input bindinput="inputfill"  maxlength="{{maxlength}}" disabled="{{isDisabled}}" focus="{{is_focus}}" ></input> 
+      <block wx:for="{{item.title}}" wx:for-item='title' wx:for-index='title_inx' wx:key="title_inx">
+          {{title}}
+          <view  
+            wx:if="{{title_inx!=item.title.length-1}}"
+            class="{{color_fill==title_inx?'active_fill':''}}" 
+            style="color:{{is_parsing?'#FF2D2D':''}};border:{{is_parsing?'1rpx solid #EFC1AD;':''}}" 
+            data-length="{{item.title.length}}"
+            bindtap="changFill">
+              {{fill_arr[title_inx]}}
+          </view>
+      </block>  
+    </view>
+  </view>
+
+  <!-- 解析 -->
+  <view wx:if="{{is_parsing}}" class="section">
+    <view class="top_title">
+      <view class="top_title_left">答案解析</view>
+    </view>
+    <view class="parsing">
+      <view>
+        正确答案：<text wx:for="{{item.answer}}" wx:for-item='answerItem' wx:for-index='answerIndex' wx:key="answerIndex">{{answerItem}} </text>
+      </view>
+      <view class="parsing_text">{{item.analysis}}</view>
+    </view>
+  </view>
+</view>
+
+<view  class="btn_box" bindtap="{{is_parsing==false?'submit':'next'}}" >
+  <text wx:if="{{active_index==subject.length-1&&is_parsing}}">完成</text>
+  <text wx:else>{{is_parsing==false?'确定':'下一题'}}</text> 
+</view>

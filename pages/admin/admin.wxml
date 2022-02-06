@@ -1,0 +1,57 @@
+<!--pages/admin/admin.wxml-->
+<view class="btn" bindtap="add_user">用户注册</view>
+
+<input class="btn" bindinput ="shanid" type='text' placeholder="填写后面要操作人员的id" auto-focus/>
+<view class="btn" bindtap="xiucha">用户查询</view>
+
+<view class="btn" bindtap="shan">用户删除</view>
+
+<!-- excel -->
+<view class="uploader" >
+    <view class="btn" bindtap="xxsh">
+      <text>查看excel数据</text>
+    </view>
+  </view>
+<!--<view class="btn" bindtap="xxsh">信息审核</view>-->
+<modal id="modal" hidden="{{hiddenmodalput}}" title="信息" confirm-text="提交" cancel-text="取消" bindcancel="add_user_cancel" bindconfirm="add_user_confirm">
+    
+    <input bindinput ="new_name" type='text' placeholder="姓名" auto-focus/>
+
+    <input bindinput ="new_class" type='text' placeholder="班级" auto-focus/>
+
+    <input bindinput ="new_id" type='text' placeholder="学号" auto-focus/>
+
+    <input bindinput ="new_pwd" type='text' placeholder="密码" auto-focus/>
+
+    <input bindinput ="minzu" type='text' placeholder="民族"  auto-focus/>
+
+<input bindinput ="sfz" type='text' placeholder="身份证"  auto-focus/>
+
+<input bindinput ="tel" type='text' placeholder="电话" auto-focus/>
+
+<input bindinput ="chat" type='text' placeholder="q：/v："  auto-focus/>
+
+<input bindinput ="mianmao" type='text' placeholder="政治面貌"   auto-focus/>
+
+</modal>
+<modal id="modal" hidden="{{hiddenmodalput1}}"  cancel-text="返回" confirm-text="确认" bindcancel="add_user_cancel"  bindconfirm="add_user_cancel">
+    
+    <input  type='text' placeholder="姓名" value="{{name}}" auto-focus/>
+
+    <input  type='text' placeholder="班级" value="{{class1}}" auto-focus/>
+
+    <input type='text' placeholder="学号" value="{{count}}" auto-focus/>
+
+    <input type='text' placeholder="密码" value="{{pwd}}" auto-focus/>
+
+    <input  type='text' placeholder="民族" value="{{minzu}}" auto-focus/>
+
+<input type='text' placeholder="身份证" value="{{sfz}}" auto-focus/>
+
+<input  type='text' placeholder="电话" value="{{tel}}" auto-focus/>
+
+<input  type='text' placeholder="q：/v：" value="{{chat}}" auto-focus/>
+
+<input type='text' placeholder="政治面貌" value="{{mianmao}}" auto-focus/>
+
+</modal>
